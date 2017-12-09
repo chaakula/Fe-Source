@@ -7,30 +7,35 @@
 </div>
 
 <div class="container">
-  <a (click)="loadData()" class="btn btn-default btn-ls text-muted refresh-button" role="button"><i class="glyphicon glyphicon-star"></i> REFRESH <i class="glyphicon glyphicon-star"></i></a>
-</div>
-
-
-<div class="container" *ngIf="result">
-  <div class="rcorners2" *ngFor="let res of result.resp" style="margin:5px;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-1">
-          <i class="glyphicon glyphicon-user rounded def text-success profile-style"></i>
-          <!--  <img src="assets/def.png" class="rounded def"> -->
-        </div>
-        <div class="col-md-11">
-          <div class="row">
-            <div class="col-md-11 text-muted commit-message">{{res.commit.message}}</div>
-          </div>
-          <div class="row" style="padding-top: 10px;">
-            <div class="col-md-6">
-              <b>{{res.commit.committer.name}}</b> {{res.commit.committer.date}} <i class="glyphicon glyphicon-ok text-success"></i></div>
-            <div class="col-md-6 text-muted">Commit: {{res.sha}}</div>
-          </div>
-        </div>
-      </div>
-
+  <div class="row">
+    <div class="col-md-10">
+    </div>
+    <div class="col-md-2">
+      <a (click)="loadData()" class="btn btn-default btn-ls text-muted refresh-button" role="button"><i class="glyphicon glyphicon-star"></i> REFRESH <i class="glyphicon glyphicon-star"></i></a>
     </div>
   </div>
-</div>
+<hr />
+
+  <div class="container" *ngIf="result">
+    <div class="rcorners2" *ngFor="let res of result.resp" style="margin:5px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1">
+            <i class="glyphicon glyphicon-user rounded def text-success profile-style"></i>
+            <!--  <img src="assets/def.png" class="rounded def"> -->
+          </div>
+          <div class="col-md-11">
+            <div class="row">
+              <div class="col-md-11 text-muted commit-message">{{res.commit.message}}</div>
+            </div>
+            <div class="row" style="padding-top: 10px;">
+              <div class="col-md-6">
+                <b>{{res.commit.committer.name}}</b> {{res.commit.committer.date}} <i class="glyphicon glyphicon-ok text-success"></i></div>
+              <div class="col-md-6 text-muted">Commit: {{res.sha}}</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
