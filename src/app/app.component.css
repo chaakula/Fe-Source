@@ -6,9 +6,10 @@
 }
 .rcorners2 {
    border-radius: 25px;
-   border: 2px solid #73AD21;
+   border: 1px solid #727272;
    padding: 10px;
    margin:5px; 
+   
   
 }
 .centered {
