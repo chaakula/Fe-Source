@@ -17,3 +17,7 @@
    text-align: left;
    width: 100%;
 }
+
+.text-success {
+   color: #17d61a !important;
+}
