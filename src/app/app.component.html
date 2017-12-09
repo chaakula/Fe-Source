@@ -5,18 +5,19 @@
   </h1>
 
 </div>
-<div class="centered">
-  <a (click)="loadData()">
-    <img src="assets/example-button.png" class="imgSize rounded">
-  </a>
+
+<div class="container">
+  <a (click)="loadData()" class="btn btn-default btn-ls text-muted refresh-button" role="button"><i class="glyphicon glyphicon-star"></i> REFRESH <i class="glyphicon glyphicon-star"></i></a>
 </div>
+
+
 <div class="container" *ngIf="result">
   <div class="rcorners2" *ngFor="let res of result.resp" style="margin:5px;">
     <div class="container">
       <div class="row">
         <div class="col-md-1">
-            <i class="glyphicon glyphicon-user rounded def text-success profile-style"></i>
-         <!--  <img src="assets/def.png" class="rounded def"> -->
+          <i class="glyphicon glyphicon-user rounded def text-success profile-style"></i>
+          <!--  <img src="assets/def.png" class="rounded def"> -->
         </div>
         <div class="col-md-11">
           <div class="row">
