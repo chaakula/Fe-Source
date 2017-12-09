@@ -1,0 +1,18 @@
+.imgSize{
+   width:100px;
+}
+.def{
+   width:55px;
+}
+.rcorners2 {
+   border-radius: 25px;
+   border: 2px solid #73AD21;
+   padding: 10px;
+   margin:5px; 
+  
+}
+.centered {
+   margin: 0 auto;
+   text-align: left;
+   width: 100%;
+}
